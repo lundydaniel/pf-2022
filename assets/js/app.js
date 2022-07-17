@@ -1,1 +1,3 @@
-console.log("Connected");
+// $(document).foundation()
+
+console.log("connected");

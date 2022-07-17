@@ -1,0 +1,23 @@
+{
+  "name": "pf-2022",
+  "version": "1.0.0",
+  "description": "Portfolio 2022",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lundydaniel/pf-2022.git"
+  },
+  "author": "Daniel Lundy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lundydaniel/pf-2022/issues"
+  },
+  "homepage": "https://github.com/lundydaniel/pf-2022#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

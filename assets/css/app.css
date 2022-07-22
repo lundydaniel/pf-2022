@@ -1,16 +1,23 @@
+/** Font import */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300&display=swap');
+
+.splash-container {
+    margin-top: .5rem;
+}
+
 .splash-logo {
     display: flex;
     position: fixed;
     justify-content: center;
     align-items: center;
-    transform: translateY(125px);
+    transform: translateY(calc(90% / 2));
     opacity: 0;
 }
 
 .splash-logo object {
     max-width: 700px;
     max-height: auto;
-    background-color: rgba(175, 175, 175, 0.3);
+    background-color: rgba(209, 209, 209, 0.1);
     border-radius: 15px;
     margin: auto;
     width: 50%;

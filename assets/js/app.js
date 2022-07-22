@@ -78,7 +78,8 @@ window.onload = function () {
         });
     }
 
-    //** Function to bring it all together (Main Function) */
+
+    //**! Function to bring it all together (Main Function) */
 
     function mainFunc() {
         panelSlideOut();

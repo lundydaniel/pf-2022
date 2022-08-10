@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Created With:
 
-Show casing a single page web application using react-router, and animations done with the gsap library. Enjoy :slightly_smiling_face:
+Show casing a single page web application using react-router, and animations done with the gsap library. Enjoy :slightly_smiling_face: :nerd_face:

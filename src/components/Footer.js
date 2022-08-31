@@ -5,6 +5,8 @@ import '../style.css';
 
 function Footer() {
     return (
+
+        //*! Add gravatar for email footer - look at security issues if any
         
             <footer className="grid-container full">
                 <section className="grid-x padding-x footer">

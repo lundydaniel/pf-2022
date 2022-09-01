@@ -61,5 +61,14 @@ footer {
 /** Work Page Styles */
 
 .card {
+    -webkit-box-shadow: 0px 10px 30px #708C8A;
+    box-shadow: 0px 10px 30px #708C8A;
     margin: 0.5rem;
+}
+
+.card-divider :not(a) {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
 }

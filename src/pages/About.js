@@ -12,7 +12,7 @@ function About() {
                 <article className="cell large-5 medium-5 small-5 align-self-middle about-section">
                     <h1 className="about-header">Hello!</h1>
                         <p>
-                            My name is Daniel and thank you for visiting my website. I am a web developer with a passion to help
+                            My name is Daniel. I am a web developer with a passion to help
                             people. I find joy in helping others accomplish their online needs and goals. 
                             In my free time I love to play around with SVG animation and learn new ways to program. 
                             <br />

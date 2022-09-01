@@ -9,7 +9,7 @@ function About() {
                 <article className="cell large-5 medium-5 small-5 author-img-container">
                     <img className="author-img" src={require("../images/dan2.jpg")} alt="Website author" />
                 </article>
-                <article className="cell large-5 medium-5 small-5 align-self-middle about-section">
+                <article className="cell large-5 medium-5 small-5 align-self-middle about-section-text">
                     <h1 className="about-header">Hello!</h1>
                         <p>
                             My name is Daniel. I am a web developer with a passion to help

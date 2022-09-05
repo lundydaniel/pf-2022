@@ -1,6 +1,10 @@
 /** Google Fonts Import (Indie Flower & DynaPuff)*/
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:wght@300&display=swap');
 
+
+/** Global Styles */
+
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -9,6 +13,19 @@ body {
 h1 {
     font-family: 'DynaPuff', cursive;
 }
+
+.button {
+    font-family: 'DynaPuff', cursive;
+    border-radius: 7px !important;
+    background-color: rgb(39, 170, 225) !important;
+}
+
+.button:hover {
+    background-color: rgb(187, 208, 250) !important;
+    color: #000000;
+}
+
+/** Header Styles */
 
 .header-nav {
     font-family: 'DynaPuff', cursive;
@@ -20,16 +37,13 @@ h1 {
     box-shadow: 0px 7px 15px -8px #708C8A;
 }
 
-button {
-    border-radius: 7px !important;
-    background-color: rgb(39, 170, 225) !important;
-}
-
 .dl-dev-logo {
     width: 125px;
     max-width: 125px;
     height: auto;
 }
+
+/** Footer Styles */
 
 footer {
     background-color: rgba(112, 140, 138, 0.1);
@@ -38,7 +52,7 @@ footer {
     margin-top: 2.5rem;
 }
 
-/** About Page Style */
+/** About Page Styles */
 
 .about-container {
     background-image: url(../src/images/bg.png);
@@ -55,7 +69,7 @@ footer {
     background: rgba(238, 236, 236, 0.5);
     padding: 1rem;
     border-top-left-radius: 130px 25px;
-    border-top-right-radius: 130px 25px;
+    border-top-right-radius: 25px 130px;
     border-bottom-left-radius: 155px 30px;
     border-bottom-right-radius: 30px 155px;
     -webkit-box-shadow: 0px 10px 30px #708C8A;
@@ -89,9 +103,17 @@ footer {
     margin: 0.5rem;
 }
 
+.card img {
+    margin-top: 0.5rem;
+}
+
 .card-divider :not(a) {
     display: flex;
     justify-content: center;
     align-self: center;
     width: 100%;
+}
+
+.card-divider {
+    background-color: rgba(112, 140, 138, 0.1);
 }

@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "title": "Bball Connection",
+            "img": "./images/bballcon.png",
+            "alt": "Bball Connection Wordpress Ecommerce Site.",
+            "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child theme."
+        },
+        {
+            "id": "1",
+            "title": "Easy Grocery",
+            "img": "./images/easygrocery.png",
+            "alt": "Ecommerce Grocery Store Site.",
+            "description": "The idea with this site was to create a mock grocery store that would utilize PHP, JS, JQuery, XHR, HTML, CSS and MySQL to display data. The results give a fully functional dynamic site."
+        },
+        {
+            "id": "2",
+            "title": "Internet Of Things",
+            "img": "./images/iot.png",
+            "alt": "Internet of Things Project.",
+            "description": "This was a fun exploratory project using a BBC Micro:bit. The object was to create an interactive web based advertisement for a vacation destination. The tech stack for this was HTML, CSS and Javascript."
+        }
+    ]
+}

@@ -11,8 +11,6 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Footer from './components/Footer';
 
-
-
 function App() {
 
   return (

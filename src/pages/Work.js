@@ -1,8 +1,11 @@
 import React from "react";
+// import Slider from "react-slick";
 
 import Projects from '../projects.json';
-
+// import SimpleSlider from "./test";
 import '../style.css';
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 function Work() {
 
@@ -10,6 +13,7 @@ function Work() {
         <section className="grid-container main-container">
             <article className="grid-x grid-padding-x align-center work-section">
             {
+                // looping through json to display
                 Projects && Projects.map( projects => {
                     return(
                         

@@ -4,7 +4,7 @@ import '../style.css';
 
 function About() {
     return (
-        <section className="grid-container about-container">
+        <section className="grid-container main-container">
             <section className="grid-x grid-margin-x align-center">
                 <article className="cell large-5 medium-5 small-5 author-img-container">
                     <img className="author-img" src={require("../images/dan2.jpg")} alt="Website author" />

@@ -1,7 +1,6 @@
 
 import './style.css';
 
-
 // import { gsap } from 'gsap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,7 +12,9 @@ import Work from './pages/Work';
 import Footer from './components/Footer';
 
 
+
 function App() {
+
   return (
     <BrowserRouter>
     <Header />

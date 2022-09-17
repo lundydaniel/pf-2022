@@ -6,69 +6,64 @@ import '../style.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Work() {
+function Work () {
     const settings = {
+        easing: 'linear',
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
                 }
             },
-            {
-                breakpoint: 600,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
+                {
+                    breakpoint: 600,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             },
-            {
-                breakpoint: 480,
-                settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                {
+                    breakpoint: 480,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
-            }
-            ]
+            },
+            ],
         };
-
     return (
-        <section className="main-work-container">
-                <Slider {...settings}>
-                    <article className="work-section">
-                            {
-                            // looping through Project Object to display data
-                            projects && projects.map(( item ) => ( 
-                                <article className="work-card" key={ item.id }>
-                                <div className="card-divider-top">
-                                    <h4>{ item.title }</h4>
-                                </div>
-                                <img
-                                    src={ item.img }
-                                    alt={ item.alt } 
-                                />
-                                <div className="card-article">
-                                    <p>{ item.description }</p>
-                                </div>
-                                <div className="card-divider-bottom">
-                                    <a href={ item.link } className="button" target="_blank" rel="noopener noreferrer">View Project</a>
-                                </div>
-                                </article>
-                            ))}
-                    </article>
-                </Slider>
-        </section>
-    )
+        <div className="proj-card-wrapper">
+            <Slider {...settings}>
+            {projects.map((item) => (
+                // looping through the card data
+                <div className="proj-card" key={item.id}>
+                    <div className="card-top">
+                        <h1>{item.title}</h1>
+                    </div>
+                    <div className="card-main">
+                        <img src={item.img} alt={item.alt} />
+                        <p>{item.description}</p>
+                    </div>
+                    <div className="card-btm">
+                        <a href={item.link} target="_blank" rel="noopener noreferrer"className="button">View Project</a>
+                    </div>
+                </div>
+            ))}
+            </Slider>
+        </div>
+        
+    );
 }
 
 export default Work;

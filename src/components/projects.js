@@ -5,7 +5,7 @@ export const projects = [
                 "title": "Mad Movies",
                 "img": "json_imgs/mad-movies.png",
                 "alt": "Movie Information Database website.",
-                "description": "The idea with this site was to create a functional movie database for users find information on their favorite movies. I used HTML, CSS, Javascript, JSON, XHR, and PHP coupled with MySQL to create a dynamic website. I also used Foundations CSS and sammy.js to help with the UI/UX of the site.",
+                "description": "I wanted to create a functional movie database for users find information on their favorite movies. I used HTML, CSS, Javascript, JSON, XHR, and PHP coupled with MySQL to create a dynamic website.",
                 "link": "https://daniellundydev.ca/madmovies"
             },
             {
@@ -37,7 +37,7 @@ export const projects = [
                 "title": "Task Today",
                 "img": "json_imgs/task-today.png",
                 "alt": "Vue.js Web Application.",
-                "description": "For this project I decided to tackle a simple Task taker web application. To accomplish this I chose to use Vue.js. For styling and content I used CSS and HTML and created a custom background image. One feature of the project I added was json data to give the user and inspirational qoute when using the web app.",
+                "description": "I decided to tackle a simple Task taker web application. To accomplish this I chose to use Vue.js. I used CSS and HTML, created a custom background image and implemented some json data for a daily does of inspiration.",
                 "link": "https://daniellundydev.ca/task_today"
             },
             {
@@ -45,7 +45,7 @@ export const projects = [
                 "title": "Bball Connection",
                 "img": "json_imgs/bballcon.png",
                 "alt": "Bball Connection Wordpress Ecommerce Site.",
-                "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child theme. I also implemented some custom functionality to the WooCommerce plugin.",
+                "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child them along with the WooCommerce plugin for ecommerce.",
                 "link": "https://staging.daniellundydev.ca/bballconnection/"
             }
         ]

@@ -11,21 +11,35 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+}
+
+hr {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 95%;
+    border: 0;
+    height: 0.1em;
+    background-image: linear-gradient(to right, rgba(195, 195, 195, 0), #27aae1, rgba(195, 195, 195, 0));
+}
+
 .main-container {
     background-image: url(../src/images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 1.5rem;
-}
-
 .button {
     font-family: 'DynaPuff', cursive;
     border-radius: 7px !important;
-    background-color: rgb(39, 170, 225) !important;
+    background-color: #27aae1 !important;
 }
 
 .button:hover {
@@ -101,6 +115,64 @@ footer {
     margin: 0 -50px;
 }
 
+
+.proj-card-wrapper {
+    margin: 2rem;
+}
+
+.collab-header-container {
+    border-left: rgb(187, 208, 250) solid 0.3em;
+}
+
+.collab-proj-header {
+    font-size: 3.2rem;
+    writing-mode: tb-rl;
+}
+
+.collab-content-container {
+    background: rgba(238, 236, 236, 0.5);
+    padding: 1rem;
+    border-top-left-radius: 130px 25px;
+    border-top-right-radius: 25px 130px;
+    border-bottom-left-radius: 155px 30px;
+    border-bottom-right-radius: 30px 155px;
+    -webkit-box-shadow: 0px 10px 30px #708C8A;
+    box-shadow: 0px 10px 30px #708C8A;
+}
+
+.collab-content-container .rmg-img-1 {
+    margin: 1.2rem;
+    border-top-left-radius: 130px 25px;
+    border-top-right-radius: 125px 120px;
+    border-bottom-left-radius: 155px 30px;
+    border-bottom-right-radius: 130px 155px;
+    -webkit-box-shadow: 0px 10px 30px #708C8A;
+    box-shadow: 0px 10px 30px #708C8A;
+    transform: translateX(200px);
+}
+
+.collab-content-container .rmg-img-2 {
+    margin: 1.2rem;
+    border-top-left-radius: 125px 120px;
+    border-top-right-radius: 130px 25px;
+    border-bottom-left-radius: 130px 155px;
+    border-bottom-right-radius: 155px 30px;
+    -webkit-box-shadow: 0px 10px 30px #708C8A;
+    box-shadow: 0px 10px 30px #708C8A;
+    transform: translateX(-150px);
+}
+
+.button.collab-button {
+    width: 95%;
+    margin: 0.5rem;
+}
+
+/** Personal projects */
+
+.per-proj-header {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
 
 .proj-card {
     box-shadow: 0px 0px 20px 2px rgba(112, 140, 138, 0.75);

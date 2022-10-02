@@ -1,4 +1,6 @@
 
+//*! Personal Projects
+
 export const projects = [
             {
                 "id": 1,
@@ -37,7 +39,7 @@ export const projects = [
                 "title": "Task Today",
                 "img": "json_imgs/task-today.png",
                 "alt": "Vue.js Web Application.",
-                "description": "I decided to tackle a simple Task taker web application. To accomplish this I chose to use Vue.js. I used CSS and HTML, created a custom background image and implemented some json data for a daily does of inspiration.",
+                "description": "I decided to tackle a simple task taker web application. To accomplish this I chose to use Vue.js. I used CSS and HTML, created a custom background image and implemented some json data for a daily does of inspiration.",
                 "link": "https://daniellundydev.ca/task_today"
             },
             {
@@ -47,5 +49,20 @@ export const projects = [
                 "alt": "Bball Connection Wordpress Ecommerce Site.",
                 "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child them along with the WooCommerce plugin for ecommerce.",
                 "link": "https://staging.daniellundydev.ca/bballconnection/"
+            }
+        ]
+
+//*! Collabrative Projects
+
+        export const collabProj = [
+            {
+                "id": 7,
+                "title": "Rmg Public Art",
+                "img": "json_imgs/rmg_public_art.jpg", 
+                "img2": "json_imgs/rmg_public_art2.png",
+                "alt": "Rmg Public Art Web Application Splash Page",
+                "alt2": "Rmg Public Art Web Application",
+                "description": "This project was done collabratively with fellow professors, students, and staff at the RMG Art Gallery. The team I was apart of worked on implementing the map portion, along with the content. For this we used Mapbox GL JS, a javascript library for interactive, customizable vector maps. Coupled with React.js and the augmented reality portion of the app, we were able to accomplish this task and provided the interactive experience that the RMG Art Gallery was hoping to share with their patrons both on-site and off.",
+                "link": "https://development.rmgpublicart.ca/Map/"
             }
         ]

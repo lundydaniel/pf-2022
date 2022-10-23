@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 // font awesome
 // import { faTwitter, faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ const Header = () => {
     // storing a reference to the logo
     const logo = useRef();
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         gsap.to(logo.current,{ rotation: "360" });
     });
 

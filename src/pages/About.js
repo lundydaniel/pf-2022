@@ -14,7 +14,7 @@ function About() {
                         <p>
                             My name is Daniel. I am a web developer with a passion to help
                             people. I find joy in helping others accomplish their online needs and goals. 
-                            In my free time I love to play around with SVG animation and learn new ways to program. 
+                            In my free time I love to play around with SVG animation and learning new ways to program. 
                             <br />
                             Outside of the computer world I enjoy basketball, fishing, wood working, photography, video games and
                             spending time with my wife and kids. Feel free to contact me if you have any questions or

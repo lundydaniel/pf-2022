@@ -1,7 +1,6 @@
 
 import './style.css';
 
-// import { gsap } from 'gsap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // import components

@@ -1,13 +1,57 @@
-import React from "react";
+import { React, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import { projects } from '../components/projects';
 import { collabProj } from "../components/projects";
+import { gsap, ScrollTrigger } from "gsap/all";
+
 
 import '../style.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Work () {
+
+
+const Work = () => {
+
+    // Scroll trigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    //! Page animations
+    /** Collabrative Project animations */
+
+    const imgAniTop = useRef();
+    const imgAniBottom = useRef();
+    
+    useEffect(() => {
+        gsap.to(imgAniTop.current,{
+            duration: 5,
+            delay: 0.3,
+            ease: "elastic",
+            x: -100,
+            // scrollTrigger: {
+            // trigger: imgAniTop,
+            // start: "30px 80%",
+            // toggleActions: "restart pause resume pause"
+            // }
+        });
+    });
+
+    useEffect(() => {
+        gsap.to(imgAniBottom.current, {
+            duration: 5,
+            delay: 2,
+            ease: "elastic",
+            x: 100,
+            // scrollTrigger: {
+            // trigger: imgAniBottom, 
+            // start: "30px 80%",
+            // toggleActions: "restart pause resume pause"
+            // }
+        });
+    });
+
+
+    //! settings for the slider
     const settings = {
         easing: 'linear',
         dots: true,
@@ -53,11 +97,11 @@ function Work () {
                     <div className="large-6 collab-content-container">
                         {collabProj && collabProj.map((item) => (
                             // looping through data
-                            <div className="test" key={item.id}>
+                            <div className="rmg-proj" key={item.id}>
                                 <h2>{item.title}</h2>
-                                <img className="rmg-img-1" src={item.img} alt={item.alt} />
+                                <img className="rmg-img-1" src={item.img} alt={item.alt} ref={imgAniTop} />
                                 <p>{item.description}</p>
-                                <img className="rmg-img-2" src={item.img2} alt={item.alt2} />
+                                <img className="rmg-img-2" src={item.img2} alt={item.alt2} ref={imgAniBottom} id="imgAniBottom" />
                                 <a href={item.link} target="_blank" rel="noopener noreferrer"className="button collab-button">View Project</a>
                             </div>
                         ))}

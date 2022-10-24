@@ -11,7 +11,15 @@ const Header = () => {
     const logo = useRef();
 
     useEffect(() => {
-        gsap.to(logo.current,{ rotation: "360" });
+        gsap.fromTo(logo.current, {
+                autoAlpha: 0
+            },
+            { 
+            delay: 2,
+            duration: 1,
+            ease: "power2.easeInOut",
+            autoAlpha: 1
+        });
     });
 
     return (

@@ -9,13 +9,14 @@ function Splash() {
 
     useEffect(() => {
         gsap.to(splashLogo.current, {
+            delay: 0.8,
             duration: 2,
             ease: "power3.easeInOut",
             x: -577,
             y: -294,
             scale: 0.26,
             opacity : 0
-        })
+        });
     });
 
     return (

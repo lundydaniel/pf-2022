@@ -47,7 +47,7 @@ export const projects = [
                 "title": "Bball Connection",
                 "img": "json_imgs/bballcon.png",
                 "alt": "Bball Connection Wordpress Ecommerce Site.",
-                "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child them along with the WooCommerce plugin for ecommerce.",
+                "description": "This site is a custom Wordpress Ecommerce site where I utilized _underscores to help create a custom child theme along with the WooCommerce plugin for ecommerce.",
                 "link": "https://staging.daniellundydev.ca/bballconnection/"
             }
         ]

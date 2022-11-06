@@ -41,10 +41,10 @@ const Header = () => {
                     </Link>
                 </article>
 
-                <article className="cell large-8 medium-6 small-6">
+                <article className="cell large-6 medium-6 small-6">
                 </article>
 
-                <article className="cell large-2 medium-2 small-2 align-self-bottom">
+                <article className="cell large-4 medium-2 small-2 align-self-bottom">
                     <ul className="menu align-right">
                         <li> 
                             <Link to="/about">

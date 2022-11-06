@@ -41,6 +41,7 @@ hr {
     font-family: 'DynaPuff', cursive;
     border-radius: 3px !important;
     background-color: #27aae1 !important;
+    width: 100px;
 }
 
 .button:hover {

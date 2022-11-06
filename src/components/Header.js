@@ -15,9 +15,9 @@ const Header = () => {
                 autoAlpha: 0
             },
             { 
-            delay: 2,
+            delay: 1,
             duration: 1,
-            ease: "power2.easeInOut",
+            ease: "sine.inOut",
             autoAlpha: 1
         });
     });
@@ -27,11 +27,11 @@ const Header = () => {
             <nav className="grid-container full">
             <section className="grid-x header-nav">
                 
-                <article className="cell large-1 medium-1 small-1">
+                <article className="columns large-1 medium-1 small-1">
                 </article>
 
-                <article className="cell large-1 medium-1 small-1" ref={logo}>
-                    <Link to="/">
+                <article className="columns large-1 medium-1 small-1" ref={logo}>
+                    <Link to="/about">
                         <img
                             className="dl-dev-logo"
                             src={require("../images/dl-dev-logo-blue.png")}
@@ -40,10 +40,10 @@ const Header = () => {
                     </Link>
                 </article>
 
-                <article className="cell large-8 medium-6 small-6">
+                <article className="columns large-8 medium-6 small-6">
                 </article>
 
-                <article className="cell large-2 medium-2 small-2 align-self-bottom">
+                <article className="columns large-2 medium-2 small-2 align-self-bottom">
                     <ul className="menu align-right">
                         <li> 
                             <Link to="/about">

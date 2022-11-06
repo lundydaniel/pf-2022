@@ -31,6 +31,10 @@ hr {
     background-image: linear-gradient(to right, rgba(195, 195, 195, 0), rgb(187, 208, 250), rgba(195, 195, 195, 0));
 }
 
+/* .splash-logo {
+    transform: translateY(200px);
+} */
+
 .main-container {
     background-image: url(../src/images/bg.png);
     background-repeat: no-repeat;

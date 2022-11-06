@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 const Header = () => {
     // storing a reference to the logo
     const logo = useRef();
+    
 
     useEffect(() => {
         gsap.fromTo(logo.current, {
@@ -27,10 +28,10 @@ const Header = () => {
             <nav className="grid-container full">
             <section className="grid-x header-nav">
                 
-                <article className="columns large-1 medium-1 small-1">
+                <article className="cell large-1 medium-1 small-1">
                 </article>
 
-                <article className="columns large-1 medium-1 small-1" ref={logo}>
+                <article className="cell large-1 medium-1 small-1" ref={logo}>
                     <Link to="/about">
                         <img
                             className="dl-dev-logo"
@@ -40,10 +41,10 @@ const Header = () => {
                     </Link>
                 </article>
 
-                <article className="columns large-8 medium-6 small-6">
+                <article className="cell large-8 medium-6 small-6">
                 </article>
 
-                <article className="columns large-2 medium-2 small-2 align-self-bottom">
+                <article className="cell large-2 medium-2 small-2 align-self-bottom">
                     <ul className="menu align-right">
                         <li> 
                             <Link to="/about">

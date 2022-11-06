@@ -17,7 +17,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 5800);
   }, []);
 
   return (
@@ -34,6 +34,7 @@ function App() {
           <Header />
             <Routes>
               <Route path='/' element={<Splash />} />
+              <Route index element={<About />} />
               <Route path='about' element={<About />} />
               <Route path='work' element={<Work />} />
             </Routes>

@@ -32,7 +32,7 @@ const Header = () => {
                 </article>
 
                 <article className="cell large-1 medium-1 small-1" ref={logo}>
-                    <Link to="/about">
+                    <Link to="/home">
                         <img
                             className="dl-dev-logo"
                             src={require("../images/dl-dev-logo-blue.png")}
@@ -46,11 +46,11 @@ const Header = () => {
 
                 <article className="cell large-4 medium-2 small-2 align-self-bottom">
                     <ul className="menu align-right">
-                        <li> 
+                        {/* <li> 
                             <Link to="/about">
                                 <button type="button" className="submit button">About</button>
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/work">
                                 <button type="button" className="submit button">Work</button>

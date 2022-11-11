@@ -4,7 +4,7 @@ import gsap from "gsap/all";
 
 import '../style.css';
 
-function About() {
+function Home() {
     //grabbing the elements that I want to animate.
     const authorImg = useRef();
     const aboutSection = useRef();
@@ -65,4 +65,4 @@ function About() {
     );
 }
 
-export default About;
+export default Home;

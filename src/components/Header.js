@@ -46,11 +46,6 @@ const Header = () => {
 
                 <article className="cell large-4 medium-2 small-2 align-self-bottom">
                     <ul className="menu align-right">
-                        {/* <li> 
-                            <Link to="/about">
-                                <button type="button" className="submit button">About</button>
-                            </Link>
-                        </li> */}
                         <li>
                             <Link to="/work">
                                 <button type="button" className="submit button">Work</button>

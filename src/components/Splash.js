@@ -13,7 +13,7 @@ function Splash() {
         tl.to(splashLogo.current, {
             y: 200,
             duration: 1, 
-            ease: "bounce.out"
+            ease: "back.out"
         })
         tl.to(splashLogo.current, {
             rotate: 360,
@@ -23,9 +23,8 @@ function Splash() {
         tl.to(splashLogo.current, {
             delay: 0.8,
             duration: 2,
-            ease: "power3.easeInOut",
-            x: -577,
-            y: -294,
+            borderRadius: '50%',
+            ease: "back.inOut",
             scale: 0.26,
             opacity : 0
         });

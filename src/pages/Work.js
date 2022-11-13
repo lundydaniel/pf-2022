@@ -57,17 +57,17 @@ const Work = () => {
         dots: true,
         infinite: true,
         autoplay: true,
-        centerMode: true,
-        speed: 500,
+        autoplaySpeed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
+        focusOnSelect: true,
         responsive: [
             {
                     breakpoint: 1024,
                     settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -75,7 +75,8 @@ const Work = () => {
                 {
                     breakpoint: 600,
                     settings: {
-                    slidesToShow: 1,
+                    fade: true,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     initialSlide: 1
                 }
@@ -83,6 +84,7 @@ const Work = () => {
                 {
                     breakpoint: 480,
                     settings: {
+                    fade: true,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -116,7 +118,7 @@ const Work = () => {
             <Slider {...settings}>
             {projects && projects.map((item) => (
                 // looping through the card data
-                <div className="proj-card" key={item.id}>
+                <div className="large-3 proj-card" key={item.id}>
                     <div className="card-top">
                         <h2>{item.title}</h2>
                     </div>
@@ -125,7 +127,7 @@ const Work = () => {
                         <p>{item.description}</p>
                     </div>
                     <div className="card-btm">
-                        <a href={item.link} target="_blank" rel="noopener noreferrer"className="button">View Project</a>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer"className="button proj-button">View Project</a>
                     </div>
                 </div>
             ))}

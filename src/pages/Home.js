@@ -1,32 +1,34 @@
 import React from "react";
-import { ReactComponent as WorkIcon } from "../images/project-work-icon.svg";
 import { useEffect, useRef } from "react";
-import gsap from "gsap/all";
+import { Link } from "react-router-dom";
+import { gsap, CustomEase } from "gsap/all";
 
 import '../style.css';
 
 
 function Home() {
+
+    //! Page animations
     //grabbing the elements that I want to animate.
     const authorImg = useRef();
     const aboutSection = useRef();
     const mainContainer = useRef();
 
-    // gsap.registerPlugin(CustomEase, CustomWiggle); // register custom ease for CTA
-    // CustomWiggle.create("myWiggle", {wiggles: 6});
-    // const WorkIcon = useRef();
+    //Creating a custom ease for the CTA in the about section
+    const workIcon = useRef();
+    CustomEase.create("workIconEase", "M0,0.005 C0,0.005 0.056,0.445 0.175,0.445 0.294,0.445 0.332,0 0.332,0 0.332,0 0.414,1 0.671,1 0.991,1 1,0 1,0");
 
     useEffect(() => {
         //setting up gsap timeline for the page load animation
-        let tl = gsap.timeline({});
-        tl.fromTo(mainContainer.current, {
+        let aboutTl = gsap.timeline({});
+        aboutTl.fromTo(mainContainer.current, {
             autoAlpha: 0
         },
         {
             autoAlpha: 1,
             duration: 0.5
         })
-        tl.fromTo(authorImg.current, {
+        aboutTl.fromTo(authorImg.current, {
             x: -300,
             autoAlpha: 0
         },
@@ -36,7 +38,7 @@ function Home() {
             autoAlpha: 1,
             ease: "back.out"
         })
-        tl.fromTo(aboutSection.current, {
+        aboutTl.fromTo(aboutSection.current, {
             y: 500,
             autoAlpha: 0
         },
@@ -49,13 +51,20 @@ function Home() {
         })
     })
 
-    // useEffect(() => {
-    //     gsap.to(WorkIcon.current, {
-    //         repeat: -1, 
-    //         duration: 0.5,
-            
-    //     })
-    // })
+    // CTA Button in about section text, animation.
+    useEffect(() => {
+        let workIconTl = gsap.timeline({repeat: -1});
+        workIconTl.fromTo(workIcon.current,  {
+            x: 0,
+            ease: "workIconEase",
+            duration: 1.5
+        },
+        {
+            x: -2,
+            ease: "workIconEase",
+            duration: 1.5
+        })
+    })
     return (
         <section className="grid-container main-container" ref={mainContainer}>
             <section className="grid-x grid-margin-x align-center">
@@ -72,9 +81,15 @@ function Home() {
                             Outside of the computer world I enjoy basketball, fishing, wood working, photography, video games and
                             spending time with my wife and kids. Feel free to contact me if you have any questions or
                             inquiries.
-                            <br />
-                            Feel free to check out some of my recent projects. <WorkIcon className="work-icon" />
                         </p>
+                        <section className="grid-x grid-padding-x">
+                            <article className="cell small-8">Feel free to check out some of my recent projects.</article>
+                            <article className="cell small-4">
+                                <Link to="/work">
+                                    <img className="work-icon" src={require("../images/project-work-icon.png")} alt="Icon for recent projects." ref={workIcon} />
+                                </Link>
+                            </article>
+                        </section>
                 </article>
             </section>
         </section>

@@ -75,6 +75,26 @@ footer {
     -webkit-box-shadow: 0px -5px 15px -8px #708C8A;
     box-shadow: 0px -5px 15px -8px #708C8A;
     margin-top: 2.5rem;
+    padding-top: 1.5rem;
+}
+
+.social-media a {
+    margin-left: 1rem;
+    color: #27aae1;
+    font-size: 2rem;
+}
+
+.social-media a:hover {
+    color: rgb(187, 208, 250) !important;
+}
+
+.email-link a {
+    color: #27aae1;
+    font-size: 1.5rem;
+}
+
+.email-link a:hover {
+    color: rgb(187, 208, 250) !important;
 }
 
 /** Home Page Styles */

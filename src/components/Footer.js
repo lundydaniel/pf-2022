@@ -14,9 +14,9 @@ function Footer() {
         
             <footer className="grid-container full">
                 <section className="grid-x footer">
-                    <article className="cell large-1 medium-1 small-1">
+                    <article className="cell large-1 medium-1 small-12">
                     </article>
-                    <article className="cell large-3 medium-3 small-3">
+                    <article className="cell large-3 medium-3 small-12">
                     <ul className="menu simple social-media">
                             <li>
                                 <a href="https://www.facebook.com/dan.lundy.31">
@@ -35,14 +35,14 @@ function Footer() {
                             </li>
                         </ul>
                     </article>
-                    <article className="cell large-1 medium-1 small-1">
+                    <article className="cell large-1 medium-1 small-12">
                     </article>
-                    <article className="cell large-3 medium-3 small-3">
-                        <p>&copy; Daniel Lundy Development</p>
+                    <article className="cell large-3 medium-3 small-12">
+                        <p>&copy; Daniel Lundy Development 2022</p>
                     </article>
-                    <article className="cell large-1 medium-1 small-1">
+                    <article className="cell large-1 medium-1 small-12">
                     </article>
-                    <article className="cell large-3 medium-3 small-3 email-link">
+                    <article className="cell large-3 medium-3 small-12 email-link">
                         <ul className="menu simple email-link">
                             <li>Feel free to reach out here.</li>
                             <li>

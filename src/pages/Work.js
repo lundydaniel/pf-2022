@@ -19,35 +19,26 @@ const Work = () => {
     //! Page animations
     /** Collabrative Project animations */
 
-    const imgAniTop = useRef();
-    const imgAniBottom = useRef();
+    const scopeRef = useRef();
     
     useEffect(() => {
-        gsap.to(imgAniTop.current,{
-            duration: 5,
-            delay: 0.3,
-            ease: "elastic",
-            x: -100,
-            // scrollTrigger: {
-            // trigger: imgAniTop,
-            // start: "30px 80%",
-            // toggleActions: "restart pause resume pause"
-            // }
-        });
-    });
-
-    useEffect(() => {
-        gsap.to(imgAniBottom.current, {
-            duration: 5,
-            delay: 2,
-            ease: "elastic",
-            x: 100,
-            // scrollTrigger: {
-            // trigger: imgAniBottom, 
-            // start: "30px 80%",
-            // toggleActions: "restart pause resume pause"
-            // }
-        });
+        // defining match media variable.
+        let mm = gsap.matchMedia(scopeRef);
+        // setting my match media
+        mm.add("(min-width: 501px)", (context) => {
+            gsap.to('.topImg',{
+                duration: 5,
+                delay: 0.3,
+                ease: "elastic",
+                x: -100
+            });
+            gsap.to('.buttomImg', {
+                duration: 5,
+                delay: 2,
+                ease: "elastic",
+                x: 100
+            });
+        });        
     });
 
 
@@ -62,6 +53,7 @@ const Work = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         focusOnSelect: true,
+        mobileFirst: true,
         responsive: [
             {
                     breakpoint: 1024,
@@ -76,7 +68,7 @@ const Work = () => {
                     breakpoint: 600,
                     settings: {
                     fade: true,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1
                 }
@@ -98,14 +90,14 @@ const Work = () => {
                     <div className="large-3 collab-header-container">
                     <h1 className="collab-proj-header">Collabrative Projects</h1>
                     </div>
-                    <div className="large-6 collab-content-container">
+                    <div className="large-6 collab-content-container" ref={scopeRef}>
                         {collabProj && collabProj.map((item) => (
                             // looping through data
                             <div className="rmg-proj" key={item.id}>
                                 <h2>{item.title}</h2>
-                                <img className="rmg-img-1" src={item.img} alt={item.alt} ref={imgAniTop} />
+                                <img className="rmg-img-1 topImg" src={item.img} alt={item.alt} />
                                 <p>{item.description}</p>
-                                <img className="rmg-img-2" src={item.img2} alt={item.alt2} ref={imgAniBottom} id="imgAniBottom" />
+                                <img className="rmg-img-2 buttomImg" src={item.img2} alt={item.alt2} />
                                 <a href={item.link} target="_blank" rel="noopener noreferrer"className="button collab-button">View Project</a>
                             </div>
                         ))}

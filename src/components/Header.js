@@ -27,11 +27,8 @@ const Header = () => {
         <header>
             <nav className="grid-container full">
             <section className="grid-x header-nav">
-                
-                <article className="cell large-1 medium-1 small-1">
-                </article>
 
-                <article className="cell large-1 medium-1 small-1" ref={logo}>
+                <article className="cell large-8 medium-8 small-8 logo" ref={logo}>
                     <Link to="/home">
                         <img
                             className="dl-dev-logo"
@@ -41,10 +38,7 @@ const Header = () => {
                     </Link>
                 </article>
 
-                <article className="cell large-6 medium-6 small-6">
-                </article>
-
-                <article className="cell large-4 medium-2 small-2 align-self-bottom">
+                <article className="cell large-4 medium-4 small-4 align-self-bottom">
                     <ul className="menu align-right">
                         <li>
                             <Link to="/work">

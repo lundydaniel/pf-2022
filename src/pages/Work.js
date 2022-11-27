@@ -25,7 +25,7 @@ const Work = () => {
         // defining match media variable.
         let mm = gsap.matchMedia(scopeRef);
         // setting my match media
-        mm.add("(min-width: 501px)", (context) => {
+        mm.add("(min-width: 844px)", (context) => {
             gsap.to('.topImg',{
                 duration: 5,
                 delay: 0.3,
@@ -87,10 +87,10 @@ const Work = () => {
         <div className="proj-card-wrapper">
             <div className="grid-container">
                 <div className="grid-x margin-x">
-                    <div className="large-3 collab-header-container">
+                    <div className="large-3 medium-12 small-12 collab-header-container">
                     <h1 className="collab-proj-header">Collabrative Projects</h1>
                     </div>
-                    <div className="large-6 collab-content-container" ref={scopeRef}>
+                    <div className="large-9 medium-12 small-12 collab-content-container" ref={scopeRef}>
                         {collabProj && collabProj.map((item) => (
                             // looping through data
                             <div className="rmg-proj" key={item.id}>
@@ -98,10 +98,9 @@ const Work = () => {
                                 <img className="rmg-img-1 topImg" src={item.img} alt={item.alt} />
                                 <p>{item.description}</p>
                                 <img className="rmg-img-2 buttomImg" src={item.img2} alt={item.alt2} />
-                                <a href={item.link} target="_blank" rel="noopener noreferrer"className="button collab-button">View Project</a>
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="button collab-button">View Project</a>
                             </div>
                         ))}
-                        <div className="large-3"></div>
                     </div>
                 </div>
                 <hr />

@@ -69,10 +69,10 @@ function Home() {
     return (
         <section className="grid-container main-container" ref={mainContainer}>
             <section className="grid-x grid-margin-x align-center">
-                <article className="cell large-5 medium-5 small-5 author-img-container" ref={authorImg}>
+                <article className="cell large-5 medium-12 small-12 author-img-container" ref={authorImg}>
                     <img className="author-img" src={require("../images/dan2.jpg")} alt="Website author" />
                 </article>
-                <article className="cell large-5 medium-5 small-5 align-self-middle about-section-text" ref={aboutSection}>
+                <article className="cell large-5 medium-12 small-12 align-self-middle about-section-text" ref={aboutSection}>
                     <h1 className="about-header">Hello!</h1>
                         <p>
                             My name is Daniel. I am a web developer with a passion to help
@@ -83,7 +83,7 @@ function Home() {
                             spending time with my wife and kids. Feel free to contact me if you have any questions or
                             inquiries.
                         </p>
-                        <section className="grid-x grid-padding-x">
+                        <section className="grid-x grid-margin-x work-cta">
                             <article className="cell small-8">Feel free to check out some of my recent projects.</article>
                             <article className="cell small-4">
                                 <Link to="/work">

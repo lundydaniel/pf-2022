@@ -11,7 +11,7 @@ function Splash() {
         //setting up gsap timeline for the animation
         let tl = gsap.timeline({});
         tl.to(splashLogo.current, {
-            y: 200,
+            y: 100,
             duration: 1, 
             ease: "back.out"
         })

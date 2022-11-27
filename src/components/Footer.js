@@ -13,34 +13,28 @@ function Footer() {
         //*! Add gravatar for email footer - look at security issues if any
         
             <footer className="grid-container full">
-                <section className="grid-x footer">
-                    <article className="cell large-1 medium-1 small-12">
-                    </article>
+                <section className="grid-x padding-x align-center footer">
                     <article className="cell large-3 medium-3 small-12">
                     <ul className="menu simple social-media">
                             <li>
-                                <a href="https://www.facebook.com/dan.lundy.31">
+                                <a href="https://www.facebook.com/dan.lundy.31" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faFacebook} />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/0nthedl21/">
+                                <a href="https://www.instagram.com/0nthedl21/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/0nthedl_">
+                                <a href="https://twitter.com/0nthedl_" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                             </li>
                         </ul>
                     </article>
-                    <article className="cell large-1 medium-1 small-12">
-                    </article>
-                    <article className="cell large-3 medium-3 small-12">
+                    <article className="cell large-3 medium-3 small-12 copywrite">
                         <p>&copy; Daniel Lundy Development 2022</p>
-                    </article>
-                    <article className="cell large-1 medium-1 small-12">
                     </article>
                     <article className="cell large-3 medium-3 small-12 email-link">
                         <ul className="menu simple email-link">

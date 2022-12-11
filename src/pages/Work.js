@@ -1,8 +1,8 @@
 import { React, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import { projects } from '../components/projects';
-import { collabProj } from "../components/projects";
-import { gsap, ScrollTrigger } from "gsap/all";
+import { projects, rmgArt, sanctus } from "../components/projects";
+import { gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import '../style.css';
@@ -19,27 +19,57 @@ const Work = () => {
     //! Page animations
     /** Collabrative Project animations */
 
-    const scopeRef = useRef();
+    const scopeRef = useRef(null);
     
     useEffect(() => {
         // defining match media variable.
-        let mm = gsap.matchMedia(scopeRef);
+        const mm = gsap.matchMedia(scopeRef);
+        // defining element for the current one that needs to be animated with ScrollTrigger
+        const el = scopeRef.current;
         // setting my match media
         mm.add("(min-width: 844px)", (context) => {
-            gsap.to('.topImg',{
-                duration: 5,
-                delay: 0.3,
-                ease: "elastic",
-                x: -100
+            gsap.to(el.querySelector('.rmg-top-img'),{
+                duration: 2,
+                ease: "back.out",
+                x: -150,
+                scrollTrigger: {
+                    trigger: el.querySelector('.rmg-top-img'),
+                    start: "top center",
+                    end: "bottom top"
+                },
             });
-            gsap.to('.buttomImg', {
-                duration: 5,
-                delay: 2,
-                ease: "elastic",
-                x: 100
+            gsap.to(el.querySelector('.rmg-btm-img'), {
+                duration: 2,
+                ease: "back.out",
+                x: 100,
+                scrollTrigger: {
+                    trigger: el.querySelector('.rmg-btm-img'),
+                    start: "top center",
+                    end: "bottom top"
+                },
+            });
+            gsap.to(el.querySelector('.sanc-top-img'), {
+                duration: 2,
+                ease: "back.out",
+                x: -150,
+                scrollTrigger: {
+                    trigger: el.querySelector('.sanc-top-img'),
+                    start: "top center",
+                    end: "bottom top"
+                },
+            });
+            gsap.to(el.querySelector('.sanc-btm-img'), {
+                duration: 2,
+                ease: "back.out",
+                x: 100,
+                scrollTrigger: {
+                    trigger: el.querySelector('.sanc-btm-img'),
+                    start: "top center",
+                    end: "bottom top"
+                },
             });
         });        
-    });
+    }, []);
 
 
     //! settings for the slider
@@ -48,7 +78,7 @@ const Work = () => {
         dots: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -67,7 +97,7 @@ const Work = () => {
                 {
                     breakpoint: 600,
                     settings: {
-                    fade: true,
+                    fade: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1
@@ -76,7 +106,7 @@ const Work = () => {
                 {
                     breakpoint: 480,
                     settings: {
-                    fade: true,
+                    fade: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -84,20 +114,39 @@ const Work = () => {
             ],
         };
     return (
-        <div className="proj-card-wrapper">
+        <div className="proj-card-wrapper" ref={scopeRef}>
             <div className="grid-container">
                 <div className="grid-x margin-x">
                     <div className="large-3 medium-12 small-12 collab-header-container">
                     <h1 className="collab-proj-header">Collabrative Projects</h1>
                     </div>
-                    <div className="large-9 medium-12 small-12 collab-content-container" ref={scopeRef}>
-                        {collabProj && collabProj.map((item) => (
+                    <div className="large-9 medium-12 small-12 collab-content-container align-center">
+                        {rmgArt && rmgArt.map((item) => (
                             // looping through data
-                            <div className="rmg-proj" key={item.id}>
+                            <div className="collab-proj" key={item.id}>
                                 <h2>{item.title}</h2>
-                                <img className="rmg-img-1 topImg" src={item.img} alt={item.alt} />
-                                <p>{item.description}</p>
-                                <img className="rmg-img-2 buttomImg" src={item.img2} alt={item.alt2} />
+                                <img className="collab-img-1 rmg-top-img" src={item.img} alt={item.alt} />
+                                <p className="text-center">{item.description}</p>
+                                <img className="collab-img-2 rmg-btm-img" src={item.img2} alt={item.alt2} />
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="button collab-button">View Project</a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div className="grid-container">
+                <div className="grid-x margin-x">
+                    <div className="large-3 medium-12 small-12">
+                    </div>
+                    <div className="large-9 medium-12 small-12 collab-content-container align-center">
+                        {sanctus && sanctus.map((item) => (
+                            // looping through data
+                            <div className="collab-proj" key={item.id}>
+                                <h2>{item.title}</h2>
+                                <img className="collab-img-1 sanc-top-img" src={item.img} alt={item.alt} />
+                                <p className="text-center">{item.description}</p>
+                                <img className="collab-img-2 sanc-btm-img" src={item.img2} alt={item.alt2} />
                                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="button collab-button">View Project</a>
                             </div>
                         ))}

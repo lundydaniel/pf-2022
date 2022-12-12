@@ -62,7 +62,7 @@ export const projects = [
                 "img2": "json_imgs/rmg_public_art2.png",
                 "alt": "Rmg Public Art Web Application Splash Page",
                 "alt2": "Rmg Public Art Web Application",
-                "description": "This project was done collabratively with fellow professors, students, and staff at the RMG Art Gallery. The team I was apart of worked on implementing the map portion, along with the content. For this we used Mapbox GL JS, a javascript library for interactive, customizable vector maps. Coupled with React.js and the augmented reality portion of the app, we were able to accomplish this task and provided the interactive experience that the RMG Art Gallery was hoping to share with their patrons both on-site and off.",
+                "description": "This project was done collabratively with our professors, fellow students, and staff at the RMG Art Gallery. The team I was apart of worked on implementing the map portion, along with the content. For this we used Mapbox GL JS, a javascript library for interactive, customizable vector maps. Coupled with React.js and the augmented reality portion of the app, we were able to accomplish this task and provided the interactive experience that the RMG Art Gallery was hoping to share with their patrons both on-site and off.",
                 "link": "https://development.rmgpublicart.ca/Map/"
             }
         ]

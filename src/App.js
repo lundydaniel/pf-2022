@@ -20,6 +20,7 @@ function App() {
     }, 4300);
   }, []);
 
+
   return (
     <main>
       <section className='app-start'>

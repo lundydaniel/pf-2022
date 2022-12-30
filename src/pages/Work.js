@@ -29,9 +29,10 @@ const Work = () => {
         // setting my match media
         mm.add("(min-width: 844px)", (context) => {
             gsap.to(el.querySelector('.rmg-top-img'),{
+                delay: 2,
                 duration: 2,
                 ease: "back.out",
-                x: -150,
+                x: -100,
                 scrollTrigger: {
                     trigger: el.querySelector('.rmg-top-img'),
                     start: "top center",
@@ -51,7 +52,7 @@ const Work = () => {
             gsap.to(el.querySelector('.sanc-top-img'), {
                 duration: 2,
                 ease: "back.out",
-                x: -150,
+                x: -100,
                 scrollTrigger: {
                     trigger: el.querySelector('.sanc-top-img'),
                     start: "top center",

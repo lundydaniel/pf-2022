@@ -8,7 +8,6 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } 
 import RootLayout from "./layouts/RootLayout";
 import Home from './pages/Home';
 import Work from './pages/Work';
-
 // Creating Browser Router 
 const router = createBrowserRouter(
   createRoutesFromElements(

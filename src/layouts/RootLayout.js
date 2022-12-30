@@ -1,28 +1,16 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useEffect, useRef} from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faInstagram, faFacebook,  } from "@fortawesome/free-brands-svg-icons";
 
-import Splash from '../components/Splash';
-
 import '../style.css';
 
 
 
 function RootLayout() {
-    //Splash page loading
-const [loading, setLoading] = useState(false);
-useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-        setLoading(false)
-    }, 4300);
-}, []);
-
 const logo = useRef();
-    
 
 useEffect(() => {
     gsap.fromTo(logo.current, {
@@ -38,12 +26,6 @@ useEffect(() => {
     return (
         <section className='app-start'>
     {
-    loading ?
-
-    <Splash 
-    loading={loading}
-    />
-    :
     <header>
         <nav className="grid-container full">
             <section className="grid-x header-nav">

@@ -75,7 +75,7 @@ export const projects = [
                 "img2": "json_imgs/sanctus-ministries.png",
                 "alt": "Sanctus Church Elementor Wordpress home page.",
                 "alt2": "Sanctus Church Elementor Wordpress Local and Global Ministries page.",
-                "description": "This project was part of my internship when studying. The purpose was a site remodel from an old site that the church wanted updated. I was tasked with gathering all the copy and assets from the old site and organizing it all for the new site. I was also involved heavily with site optimization for mobile and web. Some of those tasked include some UX elements such as the scroll to top button in \"scroll-to-top\" button, along with hiding the Sanctus Online Church call to action button on days that aren't Sunday. I was also responsible for setting up, designing and developing their online church through Brushfire's CMS.",
+                "description": "This project was part of my internship when studying. The purpose was a site remodel from an old site that the church wanted updated. I was tasked with gathering all the copy and assets from the old site and organizing it all for the new site. I was also heavily involved with site optimization for mobile and web. Some of those tasks included UX elements such as the \"scroll-to-top\" button, along with hiding the Sanctus Online Church call to action button on days that aren't Sunday. I was also responsible for setting up, designing and developing their online church through Brushfire's CMS.",
                 "link": "https://sanctuschurch.com"
             }
         ]

@@ -56,9 +56,7 @@ useEffect(() => {
 
     <main>
         <Outlet />
-    </main>
-    <footer>
-        
+    </main>        
     <footer className="grid-container full">
                 <section className="grid-x padding-x align-center footer">
                     <article className="cell large-3 medium-3 small-12">
@@ -95,7 +93,6 @@ useEffect(() => {
                     </article>
                 </section>
             </footer>
-    </footer>
     </section>
     )
 }

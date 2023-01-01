@@ -8,7 +8,7 @@ export const projects = [
                 "img": "json_imgs/mad-movies.png",
                 "alt": "Movie Information Database website.",
                 "description": "I wanted to create a functional movie database for users find information on their favorite movies. I used HTML, CSS, Javascript, JSON, XHR, and PHP coupled with MySQL to create a dynamic website.",
-                "link": "https://daniellundydev.ca/madmovies"
+                "link": "https://daniellundydev.ca/madmovies/index.html"
             },
             {
                 "id": 2,
@@ -24,7 +24,7 @@ export const projects = [
                 "img": "json_imgs/iot.png",
                 "alt": "Internet of Things Project.",
                 "description": "This was a fun exploratory project using a BBC Micro:bit. The object was to create an interactive web based advertisement for a vacation destination. The tech stack for this was HTML, CSS and Javascript.",
-                "link": "https://daniellundydev.ca/iot"
+                "link": "https://daniellundydev.ca/iot/index.html"
             },
             {
                 "id": 4,
@@ -32,7 +32,7 @@ export const projects = [
                 "img": "json_imgs/prospector.png",
                 "alt": "A Javacript Game.",
                 "description": "Welcome to The Loopy Propector. This is a Javascript game done with current ES6 practices. Also, utilizing CSS and HTML. The object is to see how much gold you can get before the river runs dry!",
-                "link": "https://daniellundydev.ca/loopy_prospector"
+                "link": "https://daniellundydev.ca/loopy_prospector/index.html"
             },
             {
                 "id": 5,
@@ -40,7 +40,7 @@ export const projects = [
                 "img": "json_imgs/task-today.png",
                 "alt": "Vue.js Web Application.",
                 "description": "I decided to tackle a simple task taker web application. To accomplish this I chose to use Vue.js. I used CSS and HTML, created a custom background image and implemented some json data for a daily does of inspiration.",
-                "link": "https://daniellundydev.ca/task_today"
+                "link": "https://daniellundydev.ca/task_today/index.html"
             },
             {
                 "id": 6,

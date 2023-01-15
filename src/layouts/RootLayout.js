@@ -85,7 +85,7 @@ useEffect(() => {
                         <ul className="menu simple email-link">
                             <li>Feel free to reach out here.</li>
                             <li>
-                                <a href="mailto:admin@daniellundydev.ca">
+                                <a href="mailto:info@daniellundydev.ca">
                                     <FontAwesomeIcon icon={faEnvelope} />
                                 </a>
                             </li>

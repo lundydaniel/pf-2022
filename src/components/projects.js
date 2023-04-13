@@ -11,14 +11,6 @@ export const projects = [
                 "link": "https://daniellundydev.ca/madmovies/index.html"
             },
             {
-                "id": 2,
-                "title": "Easy Grocery",
-                "img": "json_imgs/easygrocery.png",
-                "alt": "Ecommerce Grocery Store Site.",
-                "description": "The idea with this site was to create a mock grocery store that would utilize PHP, JS, JQuery, XHR, JSON, HTML, CSS and MySQL to display data. The results give a fully functional dynamic ecommerce site.",
-                "link": "https://easygroceries.daniellundydev.ca/#/home/"
-            },
-            {
                 "id": 3,
                 "title": "Internet Of Things",
                 "img": "json_imgs/iot.png",

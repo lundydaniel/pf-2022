@@ -32,7 +32,7 @@ const Work = () => {
                 delay: 2,
                 duration: 2,
                 ease: "back.out",
-                x: -100,
+                x: -50,
                 scrollTrigger: {
                     trigger: el.querySelector('.rmg-top-img'),
                     start: "top center",
@@ -42,7 +42,7 @@ const Work = () => {
             gsap.to(el.querySelector('.rmg-btm-img'), {
                 duration: 2,
                 ease: "back.out",
-                x: 100,
+                x: 50,
                 scrollTrigger: {
                     trigger: el.querySelector('.rmg-btm-img'),
                     start: "top center",
@@ -52,7 +52,7 @@ const Work = () => {
             gsap.to(el.querySelector('.sanc-top-img'), {
                 duration: 2,
                 ease: "back.out",
-                x: -100,
+                x: -50,
                 scrollTrigger: {
                     trigger: el.querySelector('.sanc-top-img'),
                     start: "top center",
@@ -62,7 +62,7 @@ const Work = () => {
             gsap.to(el.querySelector('.sanc-btm-img'), {
                 duration: 2,
                 ease: "back.out",
-                x: 100,
+                x: 50,
                 scrollTrigger: {
                     trigger: el.querySelector('.sanc-btm-img'),
                     start: "top center",

@@ -1,5 +1,6 @@
 /** Google Fonts Import (Indie Flower & DynaPuff)*/
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 
 /** Global Styles */
@@ -20,8 +21,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
     text-shadow: rgb(187, 208, 250) 3px 5px 2px;
     margin-top: 1.5rem;
 }
@@ -44,7 +45,8 @@ hr {
 }
 
 .button {
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
     border-radius: 3px !important;
     background-color: #27aae1 !important;
     width: 100px;
@@ -58,7 +60,6 @@ hr {
 /** Header Styles */
 
 .header-nav {
-    font-family: 'DynaPuff', cursive;
     background-color: rgba(112, 140, 138, 0.1);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -164,7 +165,7 @@ footer {
 }
 
 .collab-proj-header {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
     writing-mode: tb-rl;
 }
 
@@ -245,6 +246,13 @@ footer {
     align-self: center;
     width: 100%;
     padding: 15px;
+}
+
+.card-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    text-shadow: rgb(187, 208, 250) 3px 5px 2px;
+    margin-top: 1.5rem;
 }
 
 .card-btm {

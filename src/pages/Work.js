@@ -126,9 +126,13 @@ const Work = () => {
                             // looping through data
                             <div className="collab-proj" key={item.id}>
                                 <h2>{item.title}</h2>
-                                <img className="collab-img-1 rmg-top-img" src={item.img} alt={item.alt} />
+                                <div className="rmg-top-img">
+                                    <img className="collab-img-1" src={item.img} alt={item.alt} />
+                                </div>
                                 <p className="text-center">{item.description}</p>
-                                <img className="collab-img-2 rmg-btm-img" src={item.img2} alt={item.alt2} />
+                                <div className="rmg-btm-img">
+                                <img className="collab-img-2" src={item.img2} alt={item.alt2} />
+                                </div>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="button collab-button">View Project</a>
                             </div>
                         ))}
@@ -145,9 +149,13 @@ const Work = () => {
                             // looping through data
                             <div className="collab-proj" key={item.id}>
                                 <h2>{item.title}</h2>
-                                <img className="collab-img-1 sanc-top-img" src={item.img} alt={item.alt} />
+                                <div className="sanc-top-img">                                    
+                                    <img className="collab-img-1" src={item.img} alt={item.alt} />
+                                </div>
                                 <p className="text-center">{item.description}</p>
-                                <img className="collab-img-2 sanc-btm-img" src={item.img2} alt={item.alt2} />
+                                <div className="sanc-btm-img">
+                                    <img className="collab-img-2" src={item.img2} alt={item.alt2} />
+                                </div>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="button collab-button">View Project</a>
                             </div>
                         ))}
@@ -161,7 +169,7 @@ const Work = () => {
                 // looping through the card data
                 <div className="large-3 proj-card" key={item.id}>
                     <div className="card-top">
-                        <h2>{item.title}</h2>
+                        <h2 className="card-title">{item.title}</h2>
                     </div>
                     <div className="card-main">
                         <img src={item.img} alt={item.alt} />

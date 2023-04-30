@@ -29,45 +29,44 @@ const Work = () => {
         // setting my match media
         mm.add("(min-width: 844px)", (context) => {
             gsap.to(el.querySelector('.rmg-top-img'),{
-                delay: 2,
-                duration: 2,
-                ease: "back.out",
-                x: -50,
                 scrollTrigger: {
                     trigger: el.querySelector('.rmg-top-img'),
                     start: "top center",
-                    end: "bottom top"
+                    end: "bottom top",
                 },
-            });
-            gsap.to(el.querySelector('.rmg-btm-img'), {
                 duration: 2,
                 ease: "back.out",
-                x: 50,
+                x: -50
+            });
+            gsap.to(el.querySelector('.rmg-btm-img'), {
                 scrollTrigger: {
                     trigger: el.querySelector('.rmg-btm-img'),
                     start: "top center",
-                    end: "bottom top"
+                    end: "bottom top",
                 },
-            });
-            gsap.to(el.querySelector('.sanc-top-img'), {
-                duration: 2,
-                ease: "back.out",
-                x: -50,
-                scrollTrigger: {
-                    trigger: el.querySelector('.sanc-top-img'),
-                    start: "top center",
-                    end: "bottom top"
-                },
-            });
-            gsap.to(el.querySelector('.sanc-btm-img'), {
                 duration: 2,
                 ease: "back.out",
                 x: 50,
+            });
+            gsap.to(el.querySelector('.sanc-top-img'), {
+                scrollTrigger: {
+                    trigger: el.querySelector('.sanc-top-img'),
+                    start: "top center",
+                    end: "bottom top",
+                },
+                duration: 2,
+                ease: "back.out",
+                x: -50,
+            });
+            gsap.to(el.querySelector('.sanc-btm-img'), {
                 scrollTrigger: {
                     trigger: el.querySelector('.sanc-btm-img'),
                     start: "top center",
-                    end: "bottom top"
+                    end: "bottom top",
                 },
+                duration: 2,
+                ease: "back.out",
+                x: 50,
             });
         });        
     }, []);
@@ -163,7 +162,7 @@ const Work = () => {
                 </div>
                 <hr />
             </div>
-            <h1 className="per-proj-header">Personal Projects</h1>
+            <h1 className="per-proj-header text-center">Personal Projects</h1>
             <Slider {...settings}>
             {projects && projects.map((item) => (
                 // looping through the card data

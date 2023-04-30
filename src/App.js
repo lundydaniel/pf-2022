@@ -4,6 +4,9 @@ import './style.css';
 // importing react browser
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 
+// import useEffect
+import { useEffect } from "react";
+
 // import google analytics
 import ReactGA from "react-ga4";
 
@@ -27,6 +30,10 @@ const router = createBrowserRouter(
 ReactGA.initialize("G-P68K9N3CDL");
 
 function App() {
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
 
   return (
     <main>
